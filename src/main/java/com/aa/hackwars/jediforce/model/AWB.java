@@ -1,148 +1,199 @@
 package com.aa.hackwars.jediforce.model;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+
 public class AWB {
-	
-	private int awbNo;
-	private int flightNo;
-	private java.time.LocalDate fligthDate;
-	private java.time.LocalTime flightETD;
+
+	private String awbNumber;
+	private String flightNumber;
+	private LocalDate fligthDate;
+	private LocalTime flightETD;
 	private String origin;
 	private String destination;
 	private String agentName;
 	private String product;
 	private int pieces;
-	private int firmedPcs;
+	private int firmedPieces;
+	private int tenderedPieces;
 	private int weight;
-	private double firmedWgt;
-	private double tenderedWgt;
-	private int firmingRnk;
+	private double firmedWeight;
+	private double tenderedWeight;
+	private int firmingRank;
 	private String firmingEmail;
-	private java.time.LocalDate firmingTime;
+	private LocalDateTime firmingTime;
 	private String firmingStatus;
 	private String notificationStatus;
 	private String acceptanceStatus;
 	private String remarks;
-	
-	public int getAwbNo() {
-		return awbNo;
+
+	public String getAwbNumber() {
+		return awbNumber;
 	}
-	public void setAwbNo(int awbNo) {
-		this.awbNo = awbNo;
+
+	public void setAwbNumber(String awbNumber) {
+		this.awbNumber = awbNumber;
 	}
-	public int getFlightNo() {
-		return flightNo;
+
+	public String getFlightNumber() {
+		return flightNumber;
 	}
-	public void setFlightNo(int flightNo) {
-		this.flightNo = flightNo;
+
+	public void setFlightNumber(String flightNumber) {
+		this.flightNumber = flightNumber;
 	}
-	public java.time.LocalDate getFligthDate() {
+
+	public LocalDate getFligthDate() {
 		return fligthDate;
 	}
-	public void setFligthDate(java.time.LocalDate purchaseDate) {
-		this.fligthDate = purchaseDate;
+
+	public void setFligthDate(LocalDate fligthDate) {
+		this.fligthDate = fligthDate;
 	}
-	public java.time.LocalTime getFlightETD() {
+
+	public LocalTime getFlightETD() {
 		return flightETD;
 	}
-	public void setFlightETD(java.time.LocalTime flightETD) {
+
+	public void setFlightETD(LocalTime flightETD) {
 		this.flightETD = flightETD;
 	}
+
 	public String getOrigin() {
 		return origin;
 	}
+
 	public void setOrigin(String origin) {
 		this.origin = origin;
 	}
+
 	public String getDestination() {
 		return destination;
 	}
+
 	public void setDestination(String destination) {
 		this.destination = destination;
 	}
+
 	public String getAgentName() {
 		return agentName;
 	}
+
 	public void setAgentName(String agentName) {
 		this.agentName = agentName;
 	}
+
 	public String getProduct() {
 		return product;
 	}
+
 	public void setProduct(String product) {
 		this.product = product;
 	}
+
 	public int getPieces() {
 		return pieces;
 	}
+
 	public void setPieces(int pieces) {
 		this.pieces = pieces;
 	}
-	public int getFirmedPcs() {
-		return firmedPcs;
+
+	public int getFirmedPieces() {
+		return firmedPieces;
 	}
-	public void setFirmedPcs(int firmedPcs) {
-		this.firmedPcs = firmedPcs;
+
+	public void setFirmedPieces(int firmedPieces) {
+		this.firmedPieces = firmedPieces;
 	}
+
+	public int getTenderedPieces() {
+		return tenderedPieces;
+	}
+
+	public void setTenderedPieces(int tenderedPieces) {
+		this.tenderedPieces = tenderedPieces;
+	}
+
 	public int getWeight() {
 		return weight;
 	}
+
 	public void setWeight(int weight) {
 		this.weight = weight;
 	}
-	public double getFirmedWgt() {
-		return firmedWgt;
+
+	public double getFirmedWeight() {
+		return firmedWeight;
 	}
-	public void setFirmedWgt(double firmedWgt) {
-		this.firmedWgt = firmedWgt;
+
+	public void setFirmedWeight(double firmedWeight) {
+		this.firmedWeight = firmedWeight;
 	}
-	public double getTenderedWgt() {
-		return tenderedWgt;
+
+	public double getTenderedWeight() {
+		return tenderedWeight;
 	}
-	public void setTenderedWgt(double tenderedWgt) {
-		this.tenderedWgt = tenderedWgt;
+
+	public void setTenderedWeight(double tenderedWeight) {
+		this.tenderedWeight = tenderedWeight;
 	}
-	public int getFirmingRnk() {
-		return firmingRnk;
+
+	public int getFirmingRank() {
+		return firmingRank;
 	}
-	public void setFirmingRnk(int firmingRnk) {
-		this.firmingRnk = firmingRnk;
+
+	public void setFirmingRank(int firmingRank) {
+		this.firmingRank = firmingRank;
 	}
+
 	public String getFirmingEmail() {
 		return firmingEmail;
 	}
+
 	public void setFirmingEmail(String firmingEmail) {
 		this.firmingEmail = firmingEmail;
 	}
-	public java.time.LocalDate getFirmingTime() {
+
+	public LocalDateTime getFirmingTime() {
 		return firmingTime;
 	}
-	public void setFirmingTime(java.time.LocalDate firmingTime) {
+
+	public void setFirmingTime(LocalDateTime firmingTime) {
 		this.firmingTime = firmingTime;
 	}
+
 	public String getFirmingStatus() {
 		return firmingStatus;
 	}
+
 	public void setFirmingStatus(String firmingStatus) {
 		this.firmingStatus = firmingStatus;
 	}
+
 	public String getNotificationStatus() {
 		return notificationStatus;
 	}
+
 	public void setNotificationStatus(String notificationStatus) {
 		this.notificationStatus = notificationStatus;
 	}
+
 	public String getAcceptanceStatus() {
 		return acceptanceStatus;
 	}
+
 	public void setAcceptanceStatus(String acceptanceStatus) {
 		this.acceptanceStatus = acceptanceStatus;
 	}
+
 	public String getRemarks() {
 		return remarks;
 	}
+
 	public void setRemarks(String remarks) {
 		this.remarks = remarks;
 	}
-	
 
 }
